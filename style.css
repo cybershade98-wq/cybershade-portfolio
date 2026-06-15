@@ -21,3 +21,18 @@ footer{text-align:center;padding:30px}
 header{flex-direction:column;gap:10px}
 .hero h1{font-size:2.2rem}
 }
+/* Particles Background Configuration */
+#particles-js {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; 
+  background-color: #0b0c10; 
+}
+
+/* Ensure sections are transparent so background is visible */
+section, body {
+  background: transparent !important;
+}
