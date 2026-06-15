@@ -1,8 +1,14 @@
-
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:Poppins,sans-serif;background:#050816;color:#fff}
-.bg{position:fixed;inset:0;background:
-radial-gradient(circle at top,#6d28d9 0%,transparent 30%);z-index:-1}
+
+/* Purani .bg class ko particles ke sath mix kar diya taaki dono kaam karein */
+.bg{
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at top,#6d28d9 0%,transparent 30%);
+  z-index: -2; /* Isko -2 kiya taaki particles iske upar dikhein */
+}
+
 header{display:flex;justify-content:space-between;align-items:center;padding:20px 5%;backdrop-filter:blur(12px);position:sticky;top:0}
 .logo{display:flex;align-items:center;gap:10px;font-weight:700}
 .cs{width:42px;height:42px;border-radius:50%;background:#7c3aed;display:flex;align-items:center;justify-content:center}
@@ -17,10 +23,12 @@ section{padding:80px 8%}
 .card:hover{transform:translateY(-5px)}
 .glass{padding:30px;border-radius:16px}
 footer{text-align:center;padding:30px}
+
 @media(max-width:768px){
 header{flex-direction:column;gap:10px}
 .hero h1{font-size:2.2rem}
 }
+
 /* Particles Background Configuration */
 #particles-js {
   position: fixed;
@@ -28,11 +36,11 @@ header{flex-direction:column;gap:10px}
   height: 100%;
   top: 0;
   left: 0;
-  z-index: -1; 
-  background-color: #0b0c10; 
+  z-index: -1; /* Yeh ab sahi chalega */
 }
 
 /* Ensure sections are transparent so background is visible */
 section, body {
   background: transparent !important;
 }
+
